@@ -1,6 +1,6 @@
 <script>
     import {user} from "./sessionStore"
-    import {supabase} from "./supabaseClient"
+    import {supabase} from "./superbaseClient"
     import Auth from "./Auth.svelte"
     import Profile from "./Profile.svelte"
 

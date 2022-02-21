@@ -1,5 +1,5 @@
 <script>
-    import {supabase} from "./supabaseClient"
+    import {supabase} from "./superbaseClient"
   
     let loading = false
     let email;
