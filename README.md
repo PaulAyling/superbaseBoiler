@@ -107,3 +107,14 @@ Then, from within your project folder:
 npm run build
 surge public my-project.surge.sh
 ```
+
+
+
+
+## ABOUT ##
+I created the svelte supermap connection using the tutorials
+
+Supabase & Sveltekit - Read/Write (Part 1)
+Supabase & Sveltekit - Read/Write (Part 2)
+Supabase & Sveltekit - Read/Write (Part 3)
+by Svelte Mastery
