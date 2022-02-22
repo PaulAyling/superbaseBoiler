@@ -10,6 +10,35 @@
         password: 'example password'
         })
     }
+    let room =''
+    async function addRoom() {
+        // Create a new chat room
+        const newRoom = await supabase
+        .from('rooms')
+        .insert({ name: room, size: 'big' })
+    }
+    function getRooms() {
+        // Get public rooms and their messages
+    return supabase
+        .from('rooms')
+        .select(`
+        name,
+        size
+        `)
+
+}
+
+  
 </script>
+
+{#await getRooms()} Loading....
+{:then response}
+<pre>{JSON.stringify(response,null,2)}</pre>
+
+{/await}
+
+<input bind:value={room}>
+<button on:click={addRoom}>Add Room</button>
+
 <button on:click={signUp}> Sign up</button>
 
