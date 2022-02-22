@@ -4,17 +4,12 @@
     import Auth from "./Auth.svelte"
     import Profile from "./Profile.svelte"
 
-    user.set(supabase.auth.user())
-
-    supabase.auth.onAuthStateChange((_, session) => {
-        user.set(session.user)
-    })
+    async function signUp() {
+        const  {user , error} = await supabase.auth.signUp({
+            email: 'example@gmail.com',
+        password: 'example password'
+        })
+    }
 </script>
+<button on:click={signUp}> Sign up</button>
 
-<div class="container" style="padding: 50px 0 100px 0;">
-    {#if $user}
-        <Profile />
-    {:else}
-        <Auth />
-    {/if}
-</div>
