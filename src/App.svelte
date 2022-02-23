@@ -3,7 +3,7 @@
     import {supabase} from "./superbaseClient"
     import Auth from "./Auth.svelte"
     import Profile from "./Profile.svelte"
-
+    //hi
     user.set(supabase.auth.user())
 
     supabase.auth.onAuthStateChange((_, session) => {
