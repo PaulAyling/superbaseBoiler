@@ -3,6 +3,8 @@
     import {supabase} from "./superbaseClient"
     import Auth from "./Auth.svelte"
     import Profile from "./Profile.svelte"
+    import "./app.css";
+
 
     async function signUp() {
         const  {user , error} = await supabase.auth.signUp({
@@ -42,3 +44,6 @@
 
 <button on:click={signUp}> Sign up</button>
 
+<h1 class="text-sky-400 bg-blue-500 font-bold underline">
+    Hello world!
+  </h1>
