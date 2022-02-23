@@ -1,8 +1,12 @@
 <script>
-    import PMP from '../components/Document.svelte'
-    // import BtnTemplate from '../components/furniture/buttons/BtnTemplate.svelte'
-    // import Preview from '../components/preview/Preview.svelte'
+    import Magic from './loginMagic.svelte'
+    import Email from './loginEmail.svelte'
+    import Signup from './signup.svelte'
 </script>
-    <PMP/>
-    <!-- <BtnTemplate iconName={'faPlusCircle'} btnFunc={''} btnData={''}/> -->
-<!-- <Preview/> -->
+
+<div class="container" style="padding: 50px 0 100px 0;">
+This is the INDEX.svelte
+    <!-- <Magic/> -->
+    <Email/>
+    <Signup/>
+</div>
